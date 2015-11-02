@@ -4,8 +4,8 @@ $(function(){
     console.log('loaded');
     draw();
   }
-  img.src = 'https://raw.githubusercontent.com/twosheep0603/one-power/5b7d3d5cb98fd6c078a60b2b6c58ac4a90539b80/images/colordot.jpg';
   img.crossOrigin="anonymous"
+  img.src = 'images/colordot.jpg';
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d");
   $('#btn').click(function(){
