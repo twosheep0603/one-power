@@ -2,11 +2,47 @@
 <html>
   <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <title>One-power by twosheep0603</title>
+    <title>One Power 產生器</title>
   </head>
   <body>
-  <h1>One-power</h1>
+  
+<div class="container">
+  <div class="page-header">
+    <h1>ONE Power 產生器</h1>
+  </div>
+  <div class="row">
+    <div class="col-xs-9">
+      <canvas id="myCanvas" width="800px" height="380px"></canvas>
+    </div>
+    <div id="wrap" class="col-xs-3">
+      <h3>參數</h3>
+      <div class="form-group row">
+        <label>標題
+          <input id="title" type="text" value="ONE" class="form-control"/>
+        </label>
+        <label>副標題
+          <input id="subtitle" type="text" value="TAIWAN" class="form-control"/>
+        </label>
+        <label>文字(大)
+          <input id="big" type="text" value="台灣" class="form-control"/>
+        </label>
+        <label>文字(小)
+          <input id="word" type="text" value="就是力量。" class="form-control"/>
+        </label>
+      </div>
+      <div class="row">
+        <input id="btn" type="button" value="產生" class="btn btn-success"/>
+      </div>
+    </div>
+    <div id="preload" style="font-family: 'Open Sans';"></div>
+  </div>
+</div>
+
   </body>
+  <script src="javascripts/main.js"></script>
 </html>

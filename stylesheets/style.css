@@ -1,0 +1,11 @@
+body {
+  background: #ccc;
+}
+body #sub {
+  position: absolute;
+  top: 0px;
+}
+
+#myCanvas {
+  background: #FFF;
+}
