@@ -29,13 +29,13 @@ $(function(){
     var size4 = word.length<5?52:Math.floor(32+100/word.length)
     
     ctx.fillStyle="#000";
-    ctx.font = "900 "+size1+"px 'Open Sans'";
+    ctx.font = "800 "+size1+"px 'Open Sans'";
     ctx.textAlign='center';
     ctx.fillText(title,220,150+size1/2);
     ctx.globalCompositeOperation = 'source-atop';
     ctx.drawImage(img,-20,-10,520,360);
     ctx.globalCompositeOperation = 'source-over';
-    ctx.font = "400 "+size2+"px 'Open Sans'";
+    ctx.font = "400 "+size2+"px 'Droid Sans Mono'";
     ctx.fillText(subtitle,220,150+size1/2+size2);
     ctx.fillStyle="#333";
     ctx.fillRect(420.2,180-size1/2,1.6,size1+size2-20);
