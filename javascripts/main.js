@@ -1,17 +1,18 @@
 $(function(){
   var img = new Image();
+  img.setAttribute('crossOrigin', 'anonymous');
   img.onload = function(){
     console.log('loaded');
     draw();
   }
-  img.setAttribute('crossOrigin', 'anonymous');
-  img.src = 'images/colordot.jpg';
+  img.src = 'colordot.jpg';
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d");
   $('#btn').click(function(){
     draw();
   });
   $('#download').click(function(){
+    console.info('download canvas')
     downloadCanvas(this, 'myCanvas', 'one power.png');
   });
   function draw(){
