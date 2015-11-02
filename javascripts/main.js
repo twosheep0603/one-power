@@ -4,7 +4,7 @@ $(function(){
     console.log('loaded');
     draw();
   }
-  img.crossOrigin="anonymous"
+  img.setAttribute('crossOrigin', 'anonymous');
   img.src = 'images/colordot.jpg';
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d");
