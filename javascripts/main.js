@@ -14,8 +14,8 @@ $(function(){
     var big = $('#big').val();
     var word = $('#word').val();
     ctx.clearRect(0,0,800,500);
-    var size1 = Math.floor(500/title.length)
-    var size2 = Math.floor(300/subtitle.length)
+    var size1 = title.length<3?168:Math.floor(500/title.length)
+    var size2 = subtitle.length<6?50:Math.floor(300/subtitle.length)
     var size3 = Math.floor(48+48/big.length)
     var size4 = Math.floor(32+100/word.length)
     ctx.font = "900 "+size1+"px 'Open Sans'";
