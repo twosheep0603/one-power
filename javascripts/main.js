@@ -43,7 +43,7 @@ $(function(){
     ctx.fillText(word,450,310-size1/2);
   }
   function downloadCanvas(link, canvasID, filename) {
-    link.href = document.getElementById(canvasID).toDataURL();
+    link.href = document.getElementById(canvasID).toDataURL('image/png');
     link.download = filename;
   }
 });
