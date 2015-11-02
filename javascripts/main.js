@@ -7,7 +7,12 @@ $(function(){
   img.src = 'https://raw.githubusercontent.com/twosheep0603/one-power/5b7d3d5cb98fd6c078a60b2b6c58ac4a90539b80/images/colordot.jpg';
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d");
-  $('#btn').click(function(){draw()});
+  $('#btn').click(function(){
+    draw();
+  });
+  $('#download').click(function(){
+    downloadCanvas(this, 'myCanvas', 'one power.png');
+  });
   function draw(){
     var title = $('#title').val();
     var subtitle = $('#subtitle').val();
@@ -17,7 +22,7 @@ $(function(){
     var size1 = title.length<3?168:Math.floor(500/title.length)
     var size2 = subtitle.length<6?50:Math.floor(300/subtitle.length)
     var size3 = Math.floor(48+48/big.length)
-    var size4 = Math.floor(32+100/word.length)
+    var size4 = word.length<5?52:Math.floor(32+100/word.length)
     ctx.font = "900 "+size1+"px 'Open Sans'";
     ctx.textAlign='center';
     ctx.fillText(title,220,150+size1/2);
@@ -34,5 +39,9 @@ $(function(){
     ctx.fillText(big,450,250-size1/2);
     ctx.font = "400 "+size4+"px 'Open Sans'";
     ctx.fillText(word,450,310-size1/2);
+  }
+  function downloadCanvas(link, canvasID, filename) {
+    link.href = document.getElementById(canvasID).toDataURL();
+    link.download = filename;
   }
 });
