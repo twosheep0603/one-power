@@ -33,7 +33,7 @@ $(function(){
     ctx.textAlign='center';
     ctx.fillText(title,220,150+size1/2);
     ctx.globalCompositeOperation = 'source-atop';
-    ctx.drawImage(img,-10,20,520,360);
+    ctx.drawImage(img,-20,-10,520,360);
     ctx.globalCompositeOperation = 'source-over';
     ctx.font = "400 "+size2+"px 'Open Sans'";
     ctx.fillText(subtitle,220,150+size1/2+size2);
