@@ -35,7 +35,7 @@ $(function(){
     ctx.globalCompositeOperation = 'source-atop';
     ctx.drawImage(img,-20,-10,520,360);
     ctx.globalCompositeOperation = 'source-over';
-    ctx.font = "400 "+size2+"px 'Droid Sans Mono'";
+    ctx.font = "300 "+size2+"px 'Open Sans'";
     ctx.fillText(subtitle,220,150+size1/2+size2);
     ctx.fillStyle="#333";
     ctx.fillRect(420.2,180-size1/2,1.6,size1+size2-20);
@@ -43,7 +43,7 @@ $(function(){
     ctx.font = "400 "+size3+"px foo";
     ctx.fillStyle="black";
     ctx.fillText(big,450,250-size1/2);
-    ctx.font = "400 "+size4+"px 微軟正黑體";
+    ctx.font = "400 "+size4+"px bar";
     ctx.fillText(word,450,310-size1/2);
     ctx.globalCompositeOperation='destination-atop';
     ctx.fillStyle="#FFF";
