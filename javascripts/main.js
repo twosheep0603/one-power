@@ -40,7 +40,7 @@ $(function(){
     ctx.fillStyle="#333";
     ctx.fillRect(420.2,180-size1/2,1.6,size1+size2-20);
     ctx.textAlign='left';
-    ctx.font = "400 "+size3+"px 微軟正黑體";
+    ctx.font = "400 "+size3+"px 'Arial black'";
     ctx.fillStyle="black";
     ctx.fillText(big,450,250-size1/2);
     ctx.font = "400 "+size4+"px 微軟正黑體";
